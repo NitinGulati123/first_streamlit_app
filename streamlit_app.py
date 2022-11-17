@@ -31,7 +31,6 @@ streamlit.dataframe(fruityvice_normalized)
 streamlit.text("Hello from Snowflake:") ##---Additional hello
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
 
 streamlit.text("Hello from Snowflake:")
 
